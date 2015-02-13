@@ -2,6 +2,7 @@ class MyvdsController < ApplicationController
 
   def index
     @myvd = Myvd.all
+    @myvd = Myvd.new
   end
 
   def new
@@ -20,7 +21,7 @@ class MyvdsController < ApplicationController
   private
 
   def myvd_params
-    params
+    params.require(:myvd).permit(:name, :message, :looking_for)
   end
 
 end

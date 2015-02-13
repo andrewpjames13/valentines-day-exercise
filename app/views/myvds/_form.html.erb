@@ -1,12 +1,13 @@
-<%= form_for @myvds do |f| %>
+<%= form_for @myvd do |f| %>
 
-<%= f.label :name %>
-<%= f.text_field :name %>
+<p><%= f.label :name, class: "text-color" %>
+<%= f.text_field :name %></p>
 
-<%= f.label :message %>
-<%= f.text_field :message %>
+<p><%= f.label :message, class: "text-color" %>
+<%= f.text_field :message, class: "input-lg" %></p>
 
-<%= f.label :looking_for %>
-<%= f.text_field :looking_for %>
+<p><%= f.label :looking_for, class: "text-color" %>
+<%= f.check_box :looking_for %></p>
 
-<%= f.submit %>
+<p><%= f.submit %></p>
+<% end %>
