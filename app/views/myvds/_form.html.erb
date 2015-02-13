@@ -6,8 +6,8 @@
 <p><%= f.label :message, class: "text-color" %>
 <%= f.text_field :message, class: "input-lg" %></p>
 
-<p><%= f.label :looking_for, class: "text-color" %>
+<p><%= f.label :looking_for, "Is it me?", class: "text-color" %>
 <%= f.check_box :looking_for %></p>
 
-<p><%= f.submit %></p>
+<p><input class="btn btn-primary" <%= f.submit "Look for me" %></p>
 <% end %>
