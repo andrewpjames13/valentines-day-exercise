@@ -3,7 +3,7 @@
 @import "bootstrap";
 
 body {
-  background-image: url(lionel-richiesongs-07.2.jpg);
+  background-image: asset-url("lionel-richiesongs-07.2.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -13,7 +13,7 @@ body {
 .mouth {
   z-index: 99;
   position: relative;
-  top: 325px;
+  top: 150px;
   left: 329px;
 
   -webkit-animation-name: sing;
