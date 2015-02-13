@@ -6,9 +6,16 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+  <iframe width="300" height="55" src="https://www.youtube.com/embed/84RxK4N1wfE" frameborder="0" autoplay></iframe>
 
-<%= yield %>
+  <body>
+    <div class="container">
+      <div class="mouth">
+        <%= image_tag "lionel-mouth.png" %>
+      </div>
+      <%= yield %>
+      
+    </body>
 
-</body>
+
 </html>
